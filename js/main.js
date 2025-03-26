@@ -341,10 +341,27 @@ function initContactForm() {
 function initMobileNav() {
     const navToggle = document.getElementById('navToggle');
     const navLinks = document.querySelector('.nav-links');
+    const navLinkItems = document.querySelectorAll('.nav-links a');
     
     if (!navToggle || !navLinks) return;
     
     navToggle.addEventListener('click', function() {
         navLinks.classList.toggle('active');
+    });
+    
+    // 点击导航链接后关闭菜单
+    navLinkItems.forEach(link => {
+        link.addEventListener('click', function() {
+            if (window.innerWidth <= 768) {
+                navLinks.classList.remove('active');
+            }
+        });
+    });
+    
+    // 点击页面其他区域关闭菜单
+    document.addEventListener('click', function(e) {
+        if (!navToggle.contains(e.target) && !navLinks.contains(e.target) && navLinks.classList.contains('active')) {
+            navLinks.classList.remove('active');
+        }
     });
 }
