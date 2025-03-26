@@ -1191,3 +1191,11 @@ ul {
 
 .btn-primary {
     backgroun
+
+
+    /* 添加到css/style.css末尾 */
+img[src$=".jpg"]:not([src^="https://"])[src^="images/"],
+img[src$=".png"]:not([src^="https://"])[src^="images/"] {
+    min-height: 100px;
+    background-color: #f5f5f5;
+}
