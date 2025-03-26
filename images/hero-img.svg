@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 400">
+  <style>
+    .primary { fill: #6a4ea3; }
+    .secondary { fill: #e9be52; }
+    .light-primary { fill: #8669b8; }
+    .light-purple { fill: #c4b5e6; opacity: 0.7; }
+    .white { fill: #ffffff; }
+  </style>
+  
+  <!-- 背景图形 -->
+  <circle cx="250" cy="200" r="150" class="light-purple" />
+  
+  <!-- 中心莲花 -->
+  <g transform="translate(250, 200) scale(2.5)">
+    <!-- 外层花瓣 -->
+    <path d="M0 -40 C15 -30, 20 -10, 0 0 C-20 -10, -15 -30, 0 -40" class="light-primary" />
+    <path d="M0 -40 C15 -30, 20 -10, 0 0 C-20 -10, -15 -30, 0 -40" class="light-primary" transform="rotate(60)" />
+    <path d="M0 -40 C15 -30, 20 -10, 0 0 C-20 -10, -15 -30, 0 -40" class="light-primary" transform="rotate(120)" />
+    <path d="M0 -40 C15 -30, 20 -10, 0 0 C-20 -10, -15 -30, 0 -40" class="light-primary" transform="rotate(180)" />
+    <path d="M0 -40 C15 -30, 20 -10, 0 0 C-20 -10, -15 -30, 0 -40" class="light-primary" transform="rotate(240)" />
+    <path d="M0 -40 C15 -30, 20 -10, 0 0 C-20 -10, -15 -30, 0 -40" class="light-primary" transform="rotate(300)" />
+    
+    <!-- 内层花瓣 -->
+    <path d="M0 -25 C10 -20, 15 -5, 0 0 C-15 -5, -10 -20, 0 -25" class="primary" />
+    <path d="M0 -25 C10 -20, 15 -5, 0 0 C-15 -5, -10 -20, 0 -25" class="primary" transform="rotate(60)" />
+    <path d="M0 -25 C10 -20, 15 -5, 0 0 C-15 -5, -10 -20, 0 -25" class="primary" transform="rotate(120)" />
+    <path d="M0 -25 C10 -20, 15 -5, 0 0 C-15 -5, -10 -20, 0 -25" class="primary" transform="rotate(180)" />
+    <path d="M0 -25 C10 -20, 15 -5, 0 0 C-15 -5, -10 -20, 0 -25" class="primary" transform="rotate(240)" />
+    <path d="M0 -25 C10 -20, 15 -5, 0 0 C-15 -5, -10 -20, 0 -25" class="primary" transform="rotate(300)" />
+    
+    <!-- 花芯 -->
+    <circle cx="0" cy="0" r="10" class="secondary" />
+  </g>
+  
+  <!-- 装饰性线条 -->
+  <circle cx="250" cy="200" r="180" stroke="#8669b8" stroke-width="2" fill="none" stroke-dasharray="10,5" />
+  
+  <!-- 点缀星星 -->
+  <g class="secondary">
+    <circle cx="150" cy="100" r="3" />
+    <circle cx="350" cy="120" r="4" />
+    <circle cx="400" cy="250" r="3" />
+    <circle cx="120" cy="280" r="5" />
+    <circle cx="200" cy="350" r="3" />
+    <circle cx="300" cy="320" r="4" />
+  </g>
+  
+  <!-- 光芒效果 -->
+  <g stroke="#e9be52" stroke-width

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 80">
+  <style>
+    .logo-text { font-family: 'Arial', sans-serif; font-weight: bold; }
+    .primary { fill: #ffffff; }
+    .secondary { fill: #e9be52; }
+    .logo-circle { fill: none; stroke-width: 2; }
+  </style>
+  
+  <!-- 圆形图标 -->
+  <circle cx="40" cy="40" r="30" class="logo-circle primary" />
+  
+  <!-- 内部图案 - 莲花样式 -->
+  <path d="M40 20 C50 30, 60 35, 40 50 C20 35, 30 30, 40 20" class="secondary" />
+  <path d="M30 35 C40 45, 40 45, 50 35 C45 25, 35 25, 30 35" class="primary" />
+  
+  <!-- 中心点 -->
+  <circle cx="40" cy="37" r="5" class="secondary" />
+  
+  <!-- 文字部分 -->
+  <text x="80" y="35" class="logo-text primary" font-size="22">梵慕学院</text>
+  <text x="80" y="55" class="logo-text secondary" font-size="12">THE VANMU ACADEMY</text>
+</svg>
